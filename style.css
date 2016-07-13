@@ -64,6 +64,20 @@ h3 {
   font-size: 18px;
 }
 
+h4 {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Open Sans';
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Open Sans';
+  font-size: 13px;
+}
+
 section {
   background-color: #ddd;
 }
@@ -73,11 +87,52 @@ section {
   width: 33.3%;
 }
 
-
-.food img {
-  width: 100%;
-}
-
 .column-inner {
   padding: 20px;
 }
+
+.column-inner-second {
+  background-color: white;
+  padding: 30px;
+}
+
+.food img, .night-life img {
+  width: 100%;
+}
+
+.night-life h3{
+  font-family: "merriweather", sans-serif;
+}
+
+
+@media (max-width: 700px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.column-70 {
+  width: 70%;
+  float: left;
+  height: 650px;
+  
+}
+
+.column-30 {
+  width: 30%;
+  float: left;
+  height: 650px;
+  
+}
+
+.container:before, .row:before {
+  display: table;
+  content: "";
+}
+
+.container:after, .row:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
